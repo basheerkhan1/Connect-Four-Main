@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  background-image: image();
+}
+
+h3 {
+  font-style: italic;
+}
+
+main {
+  position: relative;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+
+}
+
+#markers {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -2vmin;
+}
+
+#markers > div {
+  border-radius: 100%;
+  border-width: 5vmin;
+  border-style: solid;
+  border-color: lightgray transparent transparent;
+  transform: scale(0.7);
+  padding: 0;
+}
+
+#markers > div:hover {
+  transform: scale(0.9);
+  transition: transform 150ms ease-in;
+  border-top-color: darkgray;
+}
+
+#board {
+  border: 5px solid red;
+  display: grid;
+  grid-template-columns: repeat(7, 8vmin);
+  grid-template-rows: repeat(6, 8vmin);
+  gap: 2vmin;
+  margin-bottom: -2vmin;
+}
+
+#board > div {
+  border-radius: 50%;
+  border: 0.4vmin solid grey;
+}
+
+  
+aside {
+  position: absolute;
+  right: 100px;
+}
